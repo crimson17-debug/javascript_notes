@@ -53,3 +53,53 @@ const myFunction = function(){
 //function ----> function but it is object function
 
 
+///+++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (primitive type we use stack memory) -copy of variable declared
+// heap (non primitive type we use heap memory)- change in oringinal value
+
+let myYoutubename = "navyautube.com"
+let anothername = myYoutubename
+anothername = "chaiaurcode"
+console.log(anothername); // the value will be chaiaurcode only it will not change
+console.log(myYoutubename); 
+
+
+// pass by reference
+
+let userone = {
+    email: "navyamade@12.com",
+    name: "navya"
+}
+
+usertwo = userone
+console.log(userone);
+console.log(usertwo);
+
+usertwo.email = "nav@124"
+
+console.log(userone);
+console.log(usertwo); // the values of both variables change 
+
+
+
+
+/*         ||||||||||||||||||||||     ||||||||||||||||||||||
+           |useronev and usertwo|---->|                    |
+           ||||||||||||||||||||||     |                    |
+                                      |                    |
+           ||||||||||||||||||||||     |   email and  name  |
+           |    chaiaurcode     |     |                    |
+           ||||||||||||||||||||||     |                    |
+                                      |                    |
+           ||||||||||||||||||||||     |                    |
+           |    anothername     |     ||||||||||||||||||||||
+           ||||||||||||||||||||||           heap
+
+           ||||||||||||||||||||||     
+           |   myYoutubeName    |
+           |||||||||||||||||||||| 
+
+            stack--------------
+           */
+          
