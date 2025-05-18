@@ -56,3 +56,6 @@ console.log( 2 + 2+ "2")
 // => in "1" is string so 2 + 2 will be 122 string addition
 
 console.log(true)
+
+
+
